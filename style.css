@@ -1,0 +1,64 @@
+h1 {
+  background-color: #2d3945;
+  color: white;
+  margin-top: 0;
+  padding: 1em;
+}
+h2 {
+  font-size: 2em;
+  color: #2d3945;
+}
+p,
+label {
+  color: gray;
+  font-family: "Merriweather", serif;
+  font-size: 1.1em;
+}
+p {
+  line-height: 1.6em;
+}
+.newsletter {
+  border-bottom: #2d3945 solid 0.35em;
+  padding-top: 0.3em;
+  padding-bottom: 2.9em;
+}
+.latest_news,
+.form,
+.newsletter {
+  width: 90%;
+  margin: auto;
+}
+.copyright,
+h1,
+.newsletter {
+  text-align: center;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+#state,
+textarea {
+  width: 99%;
+  height: 4em;
+  background-color: #eff0f1;
+  border: 0;
+  border-radius: 10px;
+}
+textarea {
+  height: 8em;
+}
+::placeholder {
+  text-align: right;
+  font-style: italic;
+  padding-right: 1em;
+}
+.button {
+  width: 100%;
+  padding: 1em;
+  background-color: #4ebbb5;
+  color: white;
+  font-family: "Merriweather", serif;
+  font-size: 1.5em;
+  border: 0;
+  border-radius: 10px;
+}
