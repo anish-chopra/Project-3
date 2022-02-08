@@ -97,3 +97,9 @@ label {
 #zip {
   width: 50%;
 }
+hr {
+  width: 90%;
+  color: #2d3945;
+  height: 1px;
+  background-color: #2d3945;
+}
