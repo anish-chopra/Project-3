@@ -46,11 +46,18 @@ textarea {
 }
 textarea {
   height: 8em;
+  margin-bottom: 1.7em;
 }
 ::placeholder {
+  font-family: "Merriweather", serif;
   text-align: right;
   font-style: italic;
   padding-right: 1em;
+}
+select {
+  font-family: "Merriweather", serif;
+  padding-left: 1em;
+  color: rgb(128, 128, 128, 0.4);
 }
 .button {
   width: 100%;
@@ -61,4 +68,32 @@ textarea {
   font-size: 1.5em;
   border: 0;
   border-radius: 10px;
+  margin-bottom: 0.9em;
+}
+label {
+  display: block;
+  margin: 0;
+  margin-bottom: 1em;
+}
+.html-news,
+.css-news,
+.javascript-news,
+.html-format,
+.plain-format {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.news-label {
+  margin-left: 0.8em;
+}
+.input-box,
+.javascript-news,
+.plain-format,
+.newsletter-heading,
+.contact-info {
+  margin-bottom: 1em;
+}
+#zip {
+  width: 50%;
 }

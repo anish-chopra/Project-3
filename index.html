@@ -23,30 +23,32 @@
       </p>
     </section>
     <section class="form">
-      <h2>Contact Information</h2>
+      <h2 class="contact-info">Contact Information</h2>
       <form>
-        <label for="name">Full Name</label><br />
+        <label for="name">Full Name</label>
         <input
           type="text"
           id="name"
           name="user_name"
           placeholder="Required"
-        /><br />
-        <label for="mail">Email Address</label><br />
+          class="input-box"
+        />
+        <label for="mail">Email Address</label>
         <input
           type="email"
           id="mail"
           name="user_email"
           placeholder="Required"
+          class="input-box"
         /><br />
-        <label for="phone">Phone Number</label><br />
-        <input type="tel" id="phone" name="user_phone" /><br />
-        <label for="street">Street Address</label><br />
-        <input type="text" id="street" name="user_street" /><br />
-        <label for="city">City</label><br />
-        <input type="text" id="city" name="user_city" /><br />
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="user_phone" class="input-box" />
+        <label for="street">Street Address</label>
+        <input type="text" id="street" name="user_street" class="input-box" />
+        <label for="city">City</label>
+        <input type="text" id="city" name="user_city" class="input-box" />
         <label for="state">State</label><br />
-        <select id="state">
+        <select id="state" class="input-box">
           <option id="choose" value="choose" disabled selected hidden>
             Choose State
           </option>
@@ -103,42 +105,51 @@
           <option value="WY">Wyoming</option>
         </select>
         <br />
-        <label for="zip">Zip Code</label><br />
-        <input type="text" id="zip" name="user_zip" /><br />
+        <label for="zip">Zip Code</label>
+        <input type="text" id="zip" name="user_zip" class="input-box" />
         <!-- </form> -->
         <section class="newsletter_preferences"></section>
-        <h2>Newsletter</h2>
+        <h2 class="newsletter-heading">Newsletter</h2>
         <!-- <form> -->
-        <label>Select the newsletter you would like to receive</label><br />
-        <input
-          type="checkbox"
-          id="html"
-          value="newsletter_html"
-          name="user_newsletter"
-        />
-        <label for="html">HTML News</label>
-        <br />
-        <input
-          type="checkbox"
-          id="css"
-          value="newsletter_css"
-          name="user_newsletter"
-        />
-        <label for="css">CSS News</label><br />
-        <input
-          type="checkbox"
-          id="javascript"
-          value="newsletter_javascript"
-          name="user_newsletter"
-        />
-        <label for="html">Javascript News</label><br /><br />
-        <label>Newsletter Format</label><br />
-        <input type="radio" name="format" />
-        <label>HTML</label><br />
-        <input type="radio" name="format" />
-        <label>Plain Text</label><br /><br />
-        <label>Other topics you'd like to hear about</label><br />
-        <textarea id="more_topics"></textarea><br />
+        <label>Select the newsletter you would like to receive</label>
+        <div class="html-news">
+          <input
+            type="checkbox"
+            id="html"
+            value="newsletter_html"
+            name="user_newsletter"
+          />
+          <label class="news-label" for="html">HTML News</label>
+        </div>
+        <div class="css-news">
+          <input
+            type="checkbox"
+            id="css"
+            value="newsletter_css"
+            name="user_newsletter"
+          />
+          <label class="news-label" for="css">CSS News</label>
+        </div>
+        <div class="javascript-news">
+          <input
+            type="checkbox"
+            id="javascript"
+            value="newsletter_javascript"
+            name="user_newsletter"
+          />
+          <label class="news-label" for="html">Javascript News</label>
+        </div>
+        <label>Newsletter Format</label>
+        <div class="html-format">
+          <input type="radio" name="format" />
+          <label class="news-label">HTML</label>
+        </div>
+        <div class="plain-format">
+          <input type="radio" name="format" />
+          <label class="news-label">Plain Text</label>
+        </div>
+        <label>Other topics you'd like to hear about</label>
+        <textarea id="more_topics"></textarea>
         <button type="submit" class="button">Sign Up</button>
       </form>
       <p class="copyright"><em>Copyright The Code Review</em></p>
