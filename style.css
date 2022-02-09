@@ -137,4 +137,7 @@ hr {
   #state {
     width: 70%;
   }
+  .contact-info {
+    margin-top: 1.3em;
+  }
 }
