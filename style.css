@@ -130,11 +130,18 @@ fieldset {
 input,
 textarea {
   transition-property: background-color;
+  transition-duration: .5s;
 }
 input:focus,
 textarea:focus {
   background-color: lightsteelblue;
 }
+@media (min-width: 768px) {
+  #zip {
+    width: 25%;
+    display: block;
+}
+
 @media (min-width: 1024px) {
   .form,
   .newsletter {
@@ -171,4 +178,7 @@ textarea:focus {
   .contact-info {
     margin-top: 1.3em;
   }
+  #zip {
+    width: 50%;
+    display: block;
 }
