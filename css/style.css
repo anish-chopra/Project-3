@@ -130,7 +130,7 @@ fieldset {
 }
 input,
 textarea,
-. {
+select {
   transition-property: background-color;
   transition-duration: 0.5s;
 }
