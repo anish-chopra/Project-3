@@ -138,7 +138,7 @@
             </select>
           </div>
           <div class="zip-div">
-            <label for="zip">Zip Code</label>
+            <label for="zip" class="zip-label">Zip Code</label>
             <input
               type="text"
               id="zip"
@@ -168,6 +168,7 @@
               id="css"
               value="newsletter_css"
               name="user_newsletter"
+              for="for-css-news"
             />
             <label class="news-label" for="css">CSS News</label>
           </div>
@@ -178,19 +179,23 @@
               value="newsletter_javascript"
               name="user_newsletter"
             />
-            <label class="news-label" for="html">Javascript News</label>
+            <label class="news-label" for="javascript">Javascript News</label>
           </div>
           <label>Newsletter Format</label>
           <div class="html-format">
-            <input type="radio" name="format" />
-            <label class="news-label">HTML</label>
+            <input type="radio" name="format" id="html-format" />
+            <label class="news-label" for="html-format">HTML</label>
           </div>
           <div class="plain-format">
-            <input type="radio" name="format" />
-            <label class="news-label">Plain Text</label>
+            <input type="radio" name="format" id="plain-format" />
+            <label class="news-label" for="plain-format">Plain Text</label>
           </div>
-          <label>Other topics you'd like to hear about</label>
-          <textarea id="more_topics" name="more"></textarea>
+          <label for="more_topics">Other topics you'd like to hear about</label>
+          <textarea
+            id="more_topics"
+            name="more"
+            placeholder="All suggestions are welcome"
+          ></textarea>
           <button type="submit" class="button">Sign Up</button>
         </fieldset>
       </form>
