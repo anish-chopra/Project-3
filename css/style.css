@@ -139,6 +139,11 @@ textarea:focus,
 select:focus {
   background-color: lightsteelblue;
 }
+textarea::placeholder {
+  text-align: left;
+  padding-top: 0.75em;
+  padding-left: 0.5em;
+}
 @media (min-width: 768px) {
   fieldset:first-of-type div {
     display: flex;
